@@ -1,0 +1,86 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+	float num1,num2,suma,resta,multi,div,s,c,t;
+	float pi=3.1416;
+	int opcion;
+	
+	while (opcion!=8){
+	
+	printf("Suma:.....1\n");
+	printf("Resta:.....2\n");
+	printf("Multiplicacion:.....3\n");
+	printf("Division:.....4\n");
+	printf("Seno de un numero:.....5\n");
+	printf("Coseno de un numero:.....6\n");
+	printf("Tangente de un numero :.....7\n");
+	
+	printf("Seleccione una opcion \n");
+	scanf("%d",&opcion);
+	
+	switch (opcion){
+			
+			case 1: printf("Ingrese un numero\n");
+			        scanf("%f",&num1);
+			        	printf("Ingrese un numero\n");
+			        		scanf("%f",&num2);
+			        		suma=num1+num2;
+			        		printf("La suma del numero 1 mas el numero 2 es :......%f.\n\n",suma);
+			        		break;
+			
+			case 2:  printf("Ingrese un numero\n");
+			         scanf("%f",&num1);
+			        	printf("Ingrese un numero\n");
+			        		scanf("%f",&num2);       		
+			        		resta=num1-num2;
+			        		printf("La suma del numero 1 mas el numero 2 es :......%f.\n\n",resta);
+			        		break;
+			
+			case 3:   printf("Ingrese un numero\n");
+			          scanf("%f",&num1);
+			          printf("Ingrese un numero\n");
+			        		scanf("%f",&num2);       		
+			        		multi=num1*num2;
+			        		printf("La suma del numero 1 mas el numero 2 es :......%f.\n\n",multi);
+			        		break;    		
+			
+			case 4:  printf("Ingrese un numero\n");
+			          scanf("%f",&num1);
+			          printf("Ingrese un numero\n");
+			        		scanf("%f",&num2);       		
+			        		div=num1/num2;
+			        		printf("La suma del numero 1 mas el numero 2 es :......%f.\n\n",div);
+			        		break;    		 
+		
+		   case 5:  printf("Ingrese un numero\n");
+			          scanf("%f",&num1);
+		              s=sin(num1*pi/180);
+		  			  printf("El seno = %.5f\t\n\n", s);	
+		                   break;
+		   case 6:   printf("Ingrese un numero\n");
+		             scanf("%f",&num1);			
+					 c=cos(num1*pi/180);  
+					 printf("El coseno = %.5f\t\n\n", c);
+					 		break;
+		   case 7:  printf("Ingrese un numero\n");
+		             scanf("%f",&num1);			
+					 t=tan(num1*pi/180);  
+					 printf("La tangente = %.5f\t\n\n", t);	
+							break;
+			default: printf("Opcion incorrecta papu\t\n\n");
+			
+					 	 
+	}       
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+	return 0;
+}
